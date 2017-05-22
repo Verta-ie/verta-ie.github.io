@@ -216,9 +216,11 @@ border-right: 1px solid #ffffff;
 }
 
 
+.centered{
+    text-align: :center;
+}
 
-
-
+#services p {text-align: center;}
 
 #bar-wrap {
     display: block;
