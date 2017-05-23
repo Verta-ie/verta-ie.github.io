@@ -79,9 +79,9 @@ fieldset[disabled] .btn-xl.active{background-color:#42aaf4;border-color:#42aaf4;
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active{color:#42aaf4;}
 .navbar-custom .navbar-collapse{border-color:rgba(255, 255, 255, 0.02);}
-.navbar-custom .navbar-toggle{background-color:#42aaf4;border-color:#42aaf4;font-family:'Libre Franklin', sans-serif;text-transform:uppercase;color:white;font-size:12px;}
+.navbar-custom .navbar-toggle{background-color:transparent;border-color:transparent;font-family:'Libre Franklin', sans-serif;text-transform:uppercase;color:white;font-size:12px;}
 .navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus{background-color:#42aaf4;}
+.navbar-custom .navbar-toggle:focus{background-color:transparent;}
 .navbar-custom .nav li a{font-family:'Libre Franklin', sans-serif;text-transform:uppercase;font-weight:400;letter-spacing:1px;color:white;}
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus{color:#42aaf4;outline:none;}
