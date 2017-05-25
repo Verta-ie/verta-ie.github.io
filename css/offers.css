@@ -62,8 +62,13 @@ h6 {
 
 }
 
+.centeredp{
+       padding: 10% 0;
 
-
+}
+.centereddiv {
+    padding: 5% 2%;
+}
 
 
 
@@ -185,18 +190,9 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
-.navbar-custom .navbar-toggle {
-  background-color:#42aaf4;
-  border-color: #42aaf4;
-font-family: 'Libre Franklin', sans-serif;
-  text-transform: uppercase;
-  color: white;
-  font-size: 12px;
-}
+.navbar-custom .navbar-toggle{background-color:transparent;border-color:transparent;font-family:'Libre Franklin', sans-serif;text-transform:uppercase;color:white;font-size:12px;}
 .navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
-  background-color: #42aaf4;
-}
+.navbar-custom .navbar-toggle:focus{background-color:transparent;}
 .navbar-custom .nav li a {
  font-family: 'Libre Franklin', sans-serif;
   text-transform: uppercase;
