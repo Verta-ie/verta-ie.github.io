@@ -4089,7 +4089,7 @@ body.is-loading .banner .actions {
 }
 
 .main.style2>header> :first-child:after {
-    background-image: linear-gradient(90deg, #c7e2ea, #d1c2ff);
+    background-image: linear-gradient(90deg, #FEAE3B, #216A95);
 }
 
 @media screen and (max-width: 1280px) {
