@@ -5198,14 +5198,18 @@ input[type="tel"].invert:-ms-input-placeholder,
 		body.is-loading #banner > .slider {
 			opacity: 0;
 		}
-
+ .hiddentext{
+               
+                display: none;
+            }
 		@media screen and (max-width: 1680px) {
 
 			#banner > .items section {
 				padding: 4.5em 5em 2.5em 5em ;
 			}
  .hiddentext{
-                visibility: hidden;
+               
+                display: none;
             }
 		}
 
@@ -5215,7 +5219,8 @@ input[type="tel"].invert:-ms-input-placeholder,
 				padding: 3.5em 3em 1.5em 3em ;
 			}
  .hiddentext{
-                visibility: hidden;
+               
+                display: none;
             }
 		}
 
@@ -5242,9 +5247,10 @@ input[type="tel"].invert:-ms-input-placeholder,
 					width: 100%;
 				}
  .hiddentext{
-                visibility: hidden;
+               
+                display: none;
             }
-		}
+}
 
 		@media screen and (max-width: 736px) {
 
@@ -5262,8 +5268,10 @@ input[type="tel"].invert:-ms-input-placeholder,
 			}
             
  .hiddentext{
-                visibility: hidden;
+               
+                display: none;
             }
+          
 		}
 
 		@media screen and (max-width: 490px) {
@@ -5284,10 +5292,9 @@ input[type="tel"].invert:-ms-input-placeholder,
 				max-height: 40vh;
 			}
             .hiddenlogo{
-                visibility: hidden;
-            }
+                display: none;   }      
              .hiddentext{
-                visibility: visible;
+                display: block;
             }
             
 		}
