@@ -4706,7 +4706,12 @@
 			flex-shrink: 0;
 			width: 40%;
 		}
-
+ .twp p {
+    font-size: 20px;
+}
+ .twp li {
+    font-size: 20px;
+}
 			#banner > .items section {
 				padding: 5em 6em 3em 6em ;
 				-moz-transition: opacity 0.5s ease-in-out, -moz-transform 0.5s ease-in-out;
@@ -4875,6 +4880,40 @@
 							background-color: #2378aa;
 							color: #ffffff !important;
 						}
+	
+
+
+
+
+.bluebut{
+    box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.1);
+    background-color: #2378aa;
+    color: #ffffff !important;
+    border-radius: 3.92857em;
+    border: 0;
+    cursor: pointer !important;
+    display: inline-block;
+    font-weight: 600;
+    height: 3.92857em;
+    line-height: 3.92857em;
+    padding: 0 3em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+
+
+
+
+
+
+
+
+
 
 							#banner > .items section.accent2 input[type="submit"].special:hover,
 							#banner > .items section.accent2 input[type="reset"].special:hover,
@@ -5131,7 +5170,9 @@
 			#banner > .items section {
 				padding: 4.5em 5em 2.5em 5em ;
 			}
-
+ .hiddentext{
+                visibility: hidden;
+            }
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -5139,7 +5180,9 @@
 			#banner > .items section {
 				padding: 3.5em 3em 1.5em 3em ;
 			}
-
+ .hiddentext{
+                visibility: hidden;
+            }
 		}
 
 		@media screen and (max-width: 980px) {
@@ -5164,7 +5207,9 @@
 					max-height: 55vh;
 					width: 100%;
 				}
-
+ .hiddentext{
+                visibility: hidden;
+            }
 		}
 
 		@media screen and (max-width: 736px) {
@@ -5181,10 +5226,13 @@
 				height: 30em;
 				max-height: none;
 			}
-
+            
+ .hiddentext{
+                visibility: hidden;
+            }
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 490px) {
 
 			#banner > .items {
 				-moz-flex-direction: column;
@@ -5201,7 +5249,13 @@
 				height: 20em;
 				max-height: 40vh;
 			}
-
+            .hiddenlogo{
+                visibility: hidden;
+            }
+             .hiddentext{
+                visibility: visible;
+            }
+            
 		}
 
 /* Footer */
