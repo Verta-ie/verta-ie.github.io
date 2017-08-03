@@ -6,11 +6,47 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        	<script src="assets/js/jquery.min.js"></script>
+  
+			<script src="assets/js/jquery.dropotron.min.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  
 	</head>
 	<body>
-  <style>
+
+		<!-- Header -->
+        <header id="header">
+        <div class="container">
+            <a href="index.html"><img id="logo1" src="images/logo.svg" class="logo hiddenlogo" style="width:15%; padding:10px "></a>
+            <a id="hiddentxt" style="color:white" href="index.html" class="hiddentext"><span  style="weight:900;">LMM CARE</span> | <span style="weight:light;">The Childcare Experts</span></a>
+            <nav id="nav" style="right:33%;">
+                <ul>
+                    
+                    <li>
+                        <a href="">Services</a>
+                        <ul>
+                            <li><a href="creche.html">Crèche</a></li>
+                    
+                            <li><a href="hotel.html">Hotel</a></li>
+                            <li><a href="weddings.html">Wedding</a></li>
+                            <li><a href="corporate.html">Corporate</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                       <li><a href="">Find a Job</a></li>
+                     <li><a href="">Resources</a></li>
+              
+                </ul>
+            </nav><nav id="nav" style="right:0;">
+            <ul><li ><a href="" ><i class="fa fa-envelope"></i></a></li></ul>
+            <div id="navy"></div>
+                    
+            </nav>
+        </div>
+    </header>
+        <style>
             	#header {
 		background: #216A95;
 
@@ -83,76 +119,83 @@
 			}
         </style>
 
-		<!-- Header -->
-			    <header id="header">
-        <div class="container">
-            <a href="index.html"><img id="logo1" src="images/logo.svg" class="logo hiddenlogo" style="width:15%; padding:10px "></a>
-            <a id="hiddentxt" style="color:#216A95" href="index.html" class="hiddentext"><span  style="weight:900;">LMM CARE</span> | <span style="weight:light;">The Childcare Experts</span></a>
-            <nav id="nav" style="right:33%;">
-                <ul>
-                    
-                    <li>
-                        <a href="">Services</a>
-                        <ul>
-                            <li><a href="creche.html">Crèche</a></li>
-                    
-                            <li><a href="hotel.html">Hotel</a></li>
-                            <li><a href="weddings.html">Wedding</a></li>
-                            <li><a href="corporate.html">Corporate</a></li>
-                           
-                        </ul>
-                    </li>
-                    <li><a href="about.html">About Us</a></li>
-                       <li><a href="">Find a Job</a></li>
-                     <li><a href="">Resources</a></li>
-              
-                </ul>
-            </nav><nav id="nav" style="right:0;">
-            <ul><li ><a href="" ><i class="fa fa-envelope"></i></a></li></ul>
-            <div id="navy"></div>
-                    
-            </nav>
-        </div>
-    </header>
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
-
-
+     
 				<!-- Main-->
-					<div id="main" class="wrapper style3">
+					<div id="" class="wrapper style3">
 						<div class="container 75%">
 							<header class="major">
-								<h2>Contact Us</h2>
-								<p>You can write us a message here and we will try to get back to you as quickly as possible</p>
+								<h2>Contact</h2>
+								<p>Please tick the services that you need for your wedding and fill out the rest of the details</p>
 							</header>
 
 							<!-- Content -->
 								<section id="content">
 									<form method="post" action="#">
+                                         <h2>Which services do you need?</h2>
+                                          <div class="row uniform 50%">
+                                            <div class="12/5u$">
+                                        <input type="checkbox" id="cere" name="cere" >
+												<label for="cere">Ceremony Package 5 plus children</label>
+                                            </div>
+                                                  <div class="12/5u$">
+                                        <input type="checkbox" id="activity" name="activity" >
+												<label for="activity">Activity Package 5 plus children</label>
+                                            </div>
+                                                  <div class="12/5u$">
+                                        <input type="checkbox" id="eve" name="eve" >
+												<label for="eve">Evening Package 5 plus children</label>
+                                            </div>
+                                              
+                                        </div>
+                                        <h2 style="padding-top:20px">Tell us about your business</h2>
+                                        <div class="row uniform 50%">
+											<div class="12u$">
+												<input type="text" name="bname" id="bname" value="" placeholder="Business Name" />
+											</div>
+										</div>
+                                         <div class="row uniform 50%">
+											<div class="12u$">
+												<input type="text" name="street" id="street" value="" placeholder="Street Address" />
+											</div>
+										</div>
+                                          <div class="row uniform 50%">
+											<div class="12u$">
+												<input type="text" name="street" id="street" value="" placeholder="City/Town and County" />
+											</div>
+										</div>
+                                         <div class="row uniform 50%">
+											<div class="12u$">
+												<input type="tel" name="phone" id="phone" value="" placeholder="Phone Number" />
+											</div>
+										</div>
+                                        <h2 style="padding-top:20px;">Tell us a bit about youself</h2>
 										<div class="row uniform 50%">
 											<div class="6u 12u$(xsmall)">
-												<input type="text" name="name" id="name" value="" placeholder="Name" />
+												<input type="text" name="name" id="name" value="" placeholder="Full Name" />
 											</div>
 											<div class="6u$ 12u$(xsmall)">
 												<input type="email" name="email" id="email" value="" placeholder="Email" />
 											</div>
+										</div> <h2 style="padding-top:20px;">What way will we contact you?</h2>
+                                        <div class="row unifrom 50%"> <div class="12/5u$">
+                                        <input type="checkbox" id="contact1" name="contact1" >
+												<label for="contact1">Email</label>
+                                            </div>
+                                                  <div class="12/5u$">
+                                        <input type="checkbox" id="contact2" name="contact2" >
+												<label for="contact2">Phone</label>
+                                            </div>
 										</div>
-										<div class="row uniform 50%">
-											<div class="12u$">
-												<input type="text" name="subject" id="subject" value="" placeholder="Subject" />
-											</div>
-										</div>
-										<div class="row uniform 50%">
-											<div class="12u$">
-												<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
+                                      
+									
 										<div class="row uniform">
 											<div class="12u$">
 												<ul class="actions align-center">
-													<li><input type="submit" value="Send Message" class="yellowbut" /></li>
-												
+													<li><input type="submit" value="Send Message" class="bluebut" /></li>
+													
 												</ul>
 											</div>
 										</div>
@@ -163,7 +206,7 @@
 					</div>
 
 				<!-- Footer -->
-					   <footer id="footer">
+   <footer id="footer">
             <div class="row" style="text-align:left; color:#FEAE3B; padding-left:20%; padding-right:20%;">
                 <div class="4u 6u(small) 12u(xsmall)">
                         <h4 style="padding-left:20px; color:#FEAE3B;">Services</h4>
@@ -210,8 +253,7 @@ Limerick</li>
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
+			
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->

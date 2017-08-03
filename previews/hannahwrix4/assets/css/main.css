@@ -1,5 +1,6 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,600,400italic,600italic");
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 
 
@@ -15,7 +16,7 @@ html{
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Raleway';
    
 
 	}
@@ -1583,14 +1584,14 @@ html{
 
 	body, input, select, textarea {
 		color: #868686;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'Raleway';
 		font-size: 13pt;
 		font-weight: 400;
 		line-height: 1.65em;
 	}
 
 #message{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
 }
 	a {
 		color: #ffffff;
@@ -1616,7 +1617,7 @@ html{
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #7f7f7f;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'Raleway';
 		font-weight: 700;
 		letter-spacing: 0.05em;
 		line-height: 1em;
@@ -1905,7 +1906,9 @@ input[type="tel"]:focus,
 		.select-wrapper select::-ms-expand {
 			display: none;
 		}
-
+.img-circle {
+    border-radius: 50%;
+}
 	input[type="text"],
 input[type="tel"],
 	input[type="password"],
@@ -2864,7 +2867,7 @@ input[type="tel"],
 					#header nav > ul > li > a {
 						color: #216a95;
 						display: block;
-						font-family: 'Raleway', sans-serif;
+						font-family: 'Raleway';
 						font-weight: 700;
 						letter-spacing: 0.05em;
 						line-height: 2.5em;
@@ -2896,7 +2899,7 @@ input[type="tel"],
 	.dropotron {
 	
 		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.075);
-		
+		background: #dddcdc;
 		list-style: none;
 		margin-top: -0.5em;
 		min-width: 15em;
@@ -2911,7 +2914,7 @@ input[type="tel"],
 			.dropotron > li > a {
 			
 				display: block;
-			
+			color: #216A95;
 				font-weight: 400;
 				letter-spacing: 0.05em;
 				line-height: 2.75em;
@@ -3223,7 +3226,7 @@ input[type="tel"],
 				right: 0;
 				position: fixed;
 				top: 0;
-				width: 100%;
+				width: 44px;
 				z-index: 10001;
 			}
 
