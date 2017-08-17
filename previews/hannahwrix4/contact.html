@@ -87,7 +87,7 @@
 			    <header id="header">
         <div class="container">
             <a href="index.html"><img id="logo1" src="images/logo.svg" class="logo hiddenlogo" style="width:15%; padding:10px "></a>
-            <a id="hiddentxt" style="color:#216A95" href="index.html" class="hiddentext"><span  style="weight:900;">LMM CARE</span> | <span style="weight:light;">The Childcare Experts</span></a>
+            <a id="hiddentxt" style="color:white" href="index.html" class="hiddentext"><span  style="weight:900;">LMM CARE</span> <span id="addtxt" style="weight:light;"> | The Childcare Experts</span></a>
             <nav id="nav" style="right:33%;">
                 <ul>
                     
@@ -107,9 +107,13 @@
                      <li><a href="">Resources</a></li>
               
                 </ul>
-            </nav><nav id="nav" style="right:0;">
-            <ul><li ><a href="contact.html" ><i class="fa fa-envelope"></i></a></li></ul>
-            <div id="navy"></div>
+            </nav>
+            <nav id="nav1"  style="right:0;margin-right:5%; ">
+            <ul><li ><a style="color:#FEAE3B;" href="contact.html" ><i class="fa fa-envelope"></i> </a></li>
+             <li ><a style="color:#FEAE3B; " id="myBtn2" ><i  class="fa fa-phone" style="
+    margin-left: -30px;" ></i> </a></li></ul>
+          
+            
                     
             </nav>
         </div>
@@ -121,17 +125,19 @@
 
 				<!-- Main-->
 					<div id="main" class="wrapper style3">
-						<div class="container 75%">
+						<div class="container 100%">
 							<header class="major">
 								<h2>Contact Us</h2>
 								<p>You can write us a message here and we will try to get back to you as quickly as possible</p>
 							</header>
 
-							<!-- Content -->
-								<section id="content">
-									<form method="post" action="#">
+							<!-- Content -->                               <div style="background-color:#FEAE3B; padding:30px;">
+                                <center>
+								<section id="content" style="width:80%">
+									<form method="post" action="contact.php">
 										<div class="row uniform 50%">
 											<div class="6u 12u$(xsmall)">
+                                                <input type="hidden" id="subj" name="subj" value="Contact Us" >
 												<input type="text" name="name" id="name" value="" placeholder="Name" />
 											</div>
 											<div class="6u$ 12u$(xsmall)">
@@ -151,7 +157,7 @@
 										<div class="row uniform">
 											<div class="12u$">
 												<ul class="actions align-center">
-													<li><input type="submit" value="Send Message" class="yellowbut" /></li>
+													<li><input type="submit" value="Send Message" class="bluebut" /></li>
 												
 												</ul>
 											</div>
@@ -160,22 +166,24 @@
 								</section>
 
 						</div>
+                              </center>
+						</div>  
 					</div>
 
 				<!-- Footer -->
 					   <footer id="footer">
-            <div class="row" style="text-align:left; color:#FEAE3B; padding-left:20%; padding-right:20%;">
+            <div class="row" style="text-align:left; color:white; padding-left:20%; padding-right:20%;">
                 <div class="4u 6u(small) 12u(xsmall)">
                         <h4 style="padding-left:20px; color:#FEAE3B;">Services</h4>
                                 <ul  style=" padding-left:10px;
     list-style-type: none;">
-                        <li  ><a style="text-decoration:none; color:#FEAE3B; outline:none" href="creche.html">Créche</a></li>
+                        <li  ><a style="text-decoration:none; color:white; outline:none" href="creche.html">Créche</a></li>
                                     
-                        <li  ><a style="text-decoration:none; color:#FEAE3B; outline:none" href="hotel.html">Hotel</a></li>
+                        <li  ><a style="text-decoration:none; color:white; outline:none" href="hotel.html">Hotel</a></li>
                                     
-                       <li  ><a style="text-decoration:none; color:#FEAE3B; outline:none" href="weddings.html">Wedding</a></li>
+                       <li  ><a style="text-decoration:none; color:white; outline:none" href="weddings.html">Wedding</a></li>
                                     
-                       <li  ><a style="text-decoration:none; color:#FEAE3B; outline:none" href="corporate.html">Corporate</a></li>
+                       <li  ><a style="text-decoration:none; color:white; outline:none" href="corporate.html">Corporate</a></li>
                                     
                    
                     </ul>
@@ -184,8 +192,8 @@
                       <h4 style="padding-left:20px; color:#FEAE3B;">Our Company</h4>
                                 <ul  style=" padding-left:10px;
     list-style-type: none;">
-                        <li  ><a style="text-decoration:none; color:#FEAE3B; outline:none" href="">Contact Us</a></li>
-                                       <li  ><a style="text-decoration:none; color:#FEAE3B; outline:none" href="about.html">About Us</a></li>
+                        <li  ><a style="text-decoration:none; color:white; outline:none" href="">Contact Us</a></li>
+                                       <li  ><a style="text-decoration:none; color:white; outline:none" href="about.html">About Us</a></li>
                    
                     </ul>
                 </div>
@@ -202,7 +210,7 @@
             </div>
    <hr>
 <a href="" style="color:#FEAE3B;">Terms & Conditions</a>
-            <p class="copyright">&copy; LMM CARE. All rights reserved.</p>
+            <p style="color:white" class="copyright">&copy; LMM CARE. All rights reserved.</p>
         </footer>
 
 			</div>

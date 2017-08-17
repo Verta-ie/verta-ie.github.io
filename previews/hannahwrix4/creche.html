@@ -19,7 +19,7 @@
         <header id="header">
         <div class="container">
             <a href="index.html"><img id="logo1" src="images/logo.svg" class="logo hiddenlogo" style="width:15%; padding:10px "></a>
-            <a id="hiddentxt" style="color:#216A95" href="index.html" class="hiddentext"><span  style="weight:900;">LMM CARE</span> <span id="addtxt" style="weight:light;"> | The Childcare Experts</span></a>
+            <a id="hiddentxt" style="color:white" href="index.html" class="hiddentext"><span  style="weight:900;">LMM CARE</span> <span id="addtxt" style="weight:light;"> | The Childcare Experts</span></a>
             <nav id="nav" style="right:33%;">
                 <ul>
                     
@@ -139,10 +139,11 @@
                             <div style="background-color:#FEAE3B; padding:30px;">
                                 <center>
 								<section id="content" style="width:80%" >
-									<form method="post" action="#">
+									<form method="post" action="email.php">
                                          <h2>Which services do you need?</h2>
                                           <div class="row uniform 50%">
                                             <div class="12/5u$">
+                                                <input type="hidden" id="subj" name="subj" value="Creche" >
                                         <input type="checkbox" id="perm" name="service[]" value="Permanent" >
 												<label for="perm">Permanent</label>
                                             </div>
@@ -176,7 +177,7 @@
 										</div>
                                           <div class="row uniform 50%">
 											<div class="12u$">
-												<input type="text" name="street" id="street" value="" placeholder="City/Town and County" />
+												<input type="text" name="city" id="city" value="" placeholder="City/Town and County" />
 											</div>
 										</div>
                                          <div class="row uniform 50%">

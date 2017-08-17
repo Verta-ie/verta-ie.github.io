@@ -19,7 +19,7 @@
         <header id="header">
         <div class="container">
             <a href="index.html"><img id="logo1" src="images/logo.svg" class="logo hiddenlogo" style="width:15%; padding:10px "></a>
-            <a id="hiddentxt" style="color:white" href="index.html" class="hiddentext"><span  style="weight:900;">LMM CARE</span> | <span style="weight:light;">The Childcare Experts</span></a>
+            <a id="hiddentxt" style="color:white" href="index.html" class="hiddentext"><span  style="weight:900;">LMM CARE</span> <span id="addtxt" style="weight:light;"> | The Childcare Experts</span></a>
             <nav id="nav" style="right:33%;">
                 <ul>
                     
@@ -39,9 +39,13 @@
                      <li><a href="">Resources</a></li>
               
                 </ul>
-            </nav><nav id="nav" style="right:0;">
-            <ul><li ><a href="contact.html" ><i class="fa fa-envelope"></i></a></li></ul>
-            <div id="navy"></div>
+            </nav>
+            <nav id="nav1"  style="right:0;margin-right:5%; ">
+            <ul><li ><a style="color:#FEAE3B;" href="contact.html" ><i class="fa fa-envelope"></i> </a></li>
+             <li ><a style="color:#FEAE3B; " id="myBtn2" ><i  class="fa fa-phone" style="
+    margin-left: -30px;" ></i> </a></li></ul>
+          
+            
                     
             </nav>
         </div>
@@ -125,23 +129,26 @@
      
 				<!-- Main-->
 					<div id="" class="wrapper style3">
-						<div class="container 75%">
+						<div class="container 100%">
 							<header class="major">
 								<h2>Permanent Childcare Solutions for your family.</h2>
 								<p>Please tick the services that you need for your family and fill out the rest of the details</p>
 							</header>
 
 							<!-- Content -->
-								<section id="content">
-									<form method="post" action="#">
+								   <div style="background-color:#FEAE3B; padding:30px;">
+                                <center>
+								<section id="content" style="width:80%">
+									<form method="post" action="parentsmail.php">
                                          <h2>Which services do you need?</h2>
+                                        <input type="hidden" id="subj" name="subj" value="Parents" >
                                           <div class="row uniform 50%">
                                             <div class="12/5u$">
-                                        <input type="checkbox" id="mind" name="mind" >
+                                        <input type="checkbox" id="mind" name="service[]" value="Childminders" >
 												<label for="mind">Childminders</label>
                                             </div>
                                                   <div class="12/5u$">
-                                        <input type="checkbox" id="nan" name="nan" >
+                                        <input type="checkbox" id="nan" name="service[]" value="Nannies" >
 												<label for="nan">Nannies</label>
                                             </div>
                                                   
@@ -170,7 +177,7 @@
 										</div>
                                           <div class="row uniform 50%">
 											<div class="12u$">
-												<input type="text" name="street" id="street" value="" placeholder="City/Town and County" />
+												<input type="text" name="city" id="street" value="" placeholder="City/Town and County" />
 											</div>
 										</div>
                                          <div class="row uniform 50%">
@@ -179,12 +186,12 @@
 											</div>
 										</div>
                                         <h2 style="padding-top:20px;">What way will we contact you?</h2>
-                                        <div class="row unifrom 50%"> <div class="12/5u$">
-                                        <input type="checkbox" id="contact1" name="contact1" >
+                                      <div class="row unifrom 50%"> <div class="12/5u$">
+                                        <input type="checkbox" id="contact1" name="contact[]" value="Email" >
 												<label for="contact1">Email</label>
                                             </div>
                                                   <div class="12/5u$">
-                                        <input type="checkbox" id="contact2" name="contact2" >
+                                        <input type="checkbox" id="contact2" name="contact[]" value="Phone">
 												<label for="contact2">Phone</label>
                                             </div>
 										</div>
@@ -202,22 +209,24 @@
 								</section>
 
 						</div>
+                                                    </center>
+						</div>
 					</div>
 
 				<!-- Footer -->
-			   <footer id="footer">
-            <div class="row" style="text-align:left; color:#FEAE3B; padding-left:20%; padding-right:20%;">
+			  <footer id="footer">
+            <div class="row" style="text-align:left; color:white; padding-left:20%; padding-right:20%;">
                 <div class="4u 6u(small) 12u(xsmall)">
                         <h4 style="padding-left:20px; color:#FEAE3B;">Services</h4>
                                 <ul  style=" padding-left:10px;
     list-style-type: none;">
-                        <li  ><a style="text-decoration:none; color:#FEAE3B; outline:none" href="creche.html">Créche</a></li>
+                        <li  ><a style="text-decoration:none; color:white; outline:none" href="creche.html">Créche</a></li>
                                     
-                        <li  ><a style="text-decoration:none; color:#FEAE3B; outline:none" href="hotel.html">Hotel</a></li>
+                        <li  ><a style="text-decoration:none; color:white; outline:none" href="hotel.html">Hotel</a></li>
                                     
-                       <li  ><a style="text-decoration:none; color:#FEAE3B; outline:none" href="weddings.html">Wedding</a></li>
+                       <li  ><a style="text-decoration:none; color:white; outline:none" href="weddings.html">Wedding</a></li>
                                     
-                       <li  ><a style="text-decoration:none; color:#FEAE3B; outline:none" href="corporate.html">Corporate</a></li>
+                       <li  ><a style="text-decoration:none; color:white; outline:none" href="corporate.html">Corporate</a></li>
                                     
                    
                     </ul>
@@ -226,8 +235,8 @@
                       <h4 style="padding-left:20px; color:#FEAE3B;">Our Company</h4>
                                 <ul  style=" padding-left:10px;
     list-style-type: none;">
-                        <li  ><a style="text-decoration:none; color:#FEAE3B; outline:none" href="">Contact Us</a></li>
-                                       <li  ><a style="text-decoration:none; color:#FEAE3B; outline:none" href="about.html">About Us</a></li>
+                        <li  ><a style="text-decoration:none; color:white; outline:none" href="">Contact Us</a></li>
+                                       <li  ><a style="text-decoration:none; color:white; outline:none" href="about.html">About Us</a></li>
                    
                     </ul>
                 </div>
@@ -244,7 +253,7 @@
             </div>
    <hr>
 <a href="" style="color:#FEAE3B;">Terms & Conditions</a>
-            <p class="copyright">&copy; LMM CARE. All rights reserved.</p>
+            <p style="color:white" class="copyright">&copy; LMM CARE. All rights reserved.</p>
         </footer>
 
 			</div>

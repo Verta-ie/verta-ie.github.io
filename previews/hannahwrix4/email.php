@@ -1,3 +1,111 @@
+
+<?php
+if(isset($_POST['email'])) {
+ 
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+    $email_to = "speedy2803@gmail.com";
+
+ /*
+    function died($error) {
+        // your error code can go here
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
+    }
+ */
+ 
+    // validation expected data exists
+ /*   if(!isset($_POST['first_name']) ||
+        !isset($_POST['last_name']) ||
+        !isset($_POST['email']) ||
+        !isset($_POST['telephone']) ||
+        !isset($_POST['comments'])) {
+        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+    }
+ */
+
+  
+    if (!empty($_POST['contact']))
+    {
+            $contact = $_POST['contact'];
+    } else{
+              $contact = array("empty","empty");
+    }
+    
+        if (!empty($_POST['service']))
+    {
+          $services = $_POST['service'];
+    } else{
+              $services =  array("empty","empty");
+    }
+ $subj = $_POST['subj'];
+    $bname = $_POST['bname']; // required
+    $street = $_POST['street']; // required
+    $city = $_POST['city']; // required
+    $phone = $_POST['phone']; // not required
+    $name = $_POST['name']; // required
+    $email = $_POST['email'];
+ 
+
+    
+ 
+  /*  $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+ */
+  /*if(!preg_match($email_exp,$email_from)) {
+    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+  }
+ 
+    $string_exp = "/^[A-Za-z .'-]+$/";
+ 
+  if(!preg_match($string_exp,$first_name)) {
+    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+  }
+ 
+  if(!preg_match($string_exp,$last_name)) {
+    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+  }
+ 
+  if(strlen($comments) < 2) {
+    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+  }
+ 
+  if(strlen($error_message) > 0) {
+    died($error_message);
+  }
+  */
+ 
+    $email_message = "Form details from ".$subj." page below. </br></br>";
+ 
+     
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+ 
+     
+   $email_message .= "<b>Services Needed: </b> ".implode(", ", $services)." </br></br>";
+    $email_message .= "<b>Business Name: </b> ".clean_string($bname)." </br></br>";
+    $email_message .= "<b>Street: </b> ".clean_string($street)." </br></br>";
+    $email_message .= "<b>City: </b> ".clean_string($city)." </br></br>";
+    $email_message .= "<b>Phone Number: </b> ".clean_string($phone)." </br></br>";
+        $email_message .= "<b>Email Address: </b>".clean_string($email)." </br></br>";
+      $email_message .= "<b>Contact Preference: </b>".implode(", ", $contact)." </br></br>";
+
+ 
+// create email headers
+  
+$headers = 'From: '.$email."\r\n".
+'Reply-To: '.$email."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+    $headers .= "MIME-Version: 1.0\r\n";
+      $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+@mail($email_to, $subj, $email_message, $headers);  
+?>
+ 
+<!-- include your own success html here -->
 <!DOCTYPE HTML>
 
 <html>
@@ -16,7 +124,7 @@
 	<body>
 
 		<!-- Header -->
-      <header id="header">
+        <header id="header">
         <div class="container">
             <a href="index.html"><img id="logo1" src="images/logo.svg" class="logo hiddenlogo" style="width:15%; padding:10px "></a>
             <a id="hiddentxt" style="color:white" href="index.html" class="hiddentext"><span  style="weight:900;">LMM CARE</span> <span id="addtxt" style="weight:light;"> | The Childcare Experts</span></a>
@@ -128,101 +236,21 @@
 			<div id="page-wrapper">
      
 				<!-- Main-->
-					<div id="" class="wrapper style3">
+					<div id="" class="wrapper style3" style="padding-top:200px; padding-bottom:200px;" >
 						<div class="container 100%">
 							<header class="major">
-								<h2>Contact</h2>
-								<p>Please tick the services that you need for your hotel and fill out the rest of the details</p>
+								<h2>Thank you for contacting us!</h2>
+								<p>One of our team will be in contact with you in the next one to two working days.</p>
 							</header>
 
 							<!-- Content -->
-                               <div style="background-color:#FEAE3B; padding:30px;">
-                                <center>
-								<section id="content" style="width:80%">
-									<form method="post" action="email.php">
-                                         <h2>Which services do you need?</h2>
-                                          <div class="row uniform 50%">
-                                            <div class="12/5u$">
-                                                <input type="hidden" id="subj" name="subj" value="Hotel" >
-                                        <input type="checkbox" id="baby" name="service[]" value="babysitting" >
-												<label for="baby">Babysitting</label>
-                                            </div>
-                                                  <div class="12/5u$">
-                                        <input type="checkbox" id="pop" name="service[]" value="Pop Up creches for weddings and events" >
-												<label for="long">Pop Up Créches for weddings and events</label>
-                                            </div>
-                                                  <div class="12/5u$">
-                                        <input type="checkbox" id="kids" name="service[]" value="kids clun staff" >
-												<label for="short">Kids Club Staff</label>
-                                            </div>
-                                                  <div class="12/5u$">
-                                        <input type="checkbox" id="play" name="service[]" value="Playroom Design" >
-												<label for="play">Playroom Design</label>
-                                            </div>
-                                                  <div class="12/5u$">
-                                        <input type="checkbox" id="con" name="service[]" value="Consultancy" >
-												<label for="comp">Consultancy</label>
-                                            </div>
-                                        </div>
-                                        <h2 style="padding-top:20px">Tell us about your business</h2>
-                                        <div class="row uniform 50%">
-											<div class="12u$">
-												<input type="text" name="bname" id="bname" value="" placeholder="Business Name" />
-											</div>
-										</div>
-                                         <div class="row uniform 50%">
-											<div class="12u$">
-												<input type="text" name="street" id="street" value="" placeholder="Street Address" />
-											</div>
-										</div>
-                                          <div class="row uniform 50%">
-											<div class="12u$">
-												<input type="text" name="city" id="city" value="" placeholder="City/Town and County" />
-											</div>
-										</div>
-                                         <div class="row uniform 50%">
-											<div class="12u$">
-												<input type="tel" name="phone" id="phone" value="" placeholder="Phone Number" />
-											</div>
-										</div>
-                                        <h2 style="padding-top:20px;">Tell us a bit about youself</h2>
-										<div class="row uniform 50%">
-											<div class="6u 12u$(xsmall)">
-												<input type="text" name="name" id="name" value="" placeholder="Full Name" />
-											</div>
-											<div class="6u$ 12u$(xsmall)">
-												<input type="email" name="email" id="email" value="" placeholder="Email" />
-											</div>
-										</div> <h2 style="padding-top:20px;">What way will we contact you?</h2>
-                                        <div class="row unifrom 50%"> <div class="12/5u$">
-                                        <input type="checkbox" id="contact1" name="contact[]" value="Email" >
-												<label for="contact1">Email</label>
-                                            </div>
-                                                  <div class="12/5u$">
-                                        <input type="checkbox" id="contact2" name="contact[]" value="Phone">
-												<label for="contact2">Phone</label>
-                                            </div>
-										</div>
-                                      
-									
-										<div class="row uniform">
-											<div class="12u$">
-												<ul class="actions align-center">
-													<li><input type="submit" value="Send Message" class="bluebut" /></li>
-													
-												</ul>
-											</div>
-										</div>
-									</form>
-								</section>
-
-						</div>
-                               </center>
-						</div>    
+                        </div>
+                </div>
+                
 					</div>
 
 				<!-- Footer -->
-  <footer id="footer">
+	    <footer id="footer">
             <div class="row" style="text-align:left; color:white; padding-left:20%; padding-right:20%;">
                 <div class="4u 6u(small) 12u(xsmall)">
                         <h4 style="padding-left:20px; color:#FEAE3B;">Services</h4>
@@ -275,3 +303,7 @@
 
 	</body>
 </html>
+<?php
+ 
+}
+?>
