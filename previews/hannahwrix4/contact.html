@@ -103,7 +103,7 @@
                         </ul>
                     </li>
                     <li><a href="about.html">About Us</a></li>
-                       <li><a href="">Find a Job</a></li>
+                       <li><a href="registration.html">Find a Job</a></li>
                      <li><a href="">Resources</a></li>
               
                 </ul>
@@ -135,10 +135,16 @@
                                 <center>
 								<section id="content" style="width:80%">
 									<form method="post" action="contact.php">
+                                        <div class="row uniform 50%">
+											<div class="12u$">
+											 <input type="hidden" id="subj" name="subj" value="Contact Us" >
+												<input type="text" name="name" id="name" value="" placeholder="Name" />
+											</div>
+										</div>
 										<div class="row uniform 50%">
 											<div class="6u 12u$(xsmall)">
-                                                <input type="hidden" id="subj" name="subj" value="Contact Us" >
-												<input type="text" name="name" id="name" value="" placeholder="Name" />
+                                                
+												<input type="tel" name="phone" id="phone" value="" placeholder="Phone Number" />
 											</div>
 											<div class="6u$ 12u$(xsmall)">
 												<input type="email" name="email" id="email" value="" placeholder="Email" />
@@ -153,6 +159,16 @@
 											<div class="12u$">
 												<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
 											</div>
+										</div>
+                                         <h2 style="padding-top:20px;">How will we contact you?</h2>
+                                        <div class="row unifrom 50%"> <div class="12/5u$">
+                                        <input type="checkbox" id="contact1" name="contact[]" value="Email" >
+												<label for="contact1">Email</label>
+                                            </div>
+                                                  <div class="12/5u$">
+                                        <input type="checkbox" id="contact2" name="contact[]" value="Phone">
+												<label for="contact2">Phone</label>
+                                            </div>
 										</div>
 										<div class="row uniform">
 											<div class="12u$">
@@ -172,7 +188,7 @@
 
 				<!-- Footer -->
 					   <footer id="footer">
-            <div class="row" style="text-align:left; color:white; padding-left:20%; padding-right:20%;">
+            <div class="row  footer-wrapper" style="text-align:left; color:white;">
                 <div class="4u 6u(small) 12u(xsmall)">
                         <h4 style="padding-left:20px; color:#FEAE3B;">Services</h4>
                                 <ul  style=" padding-left:10px;

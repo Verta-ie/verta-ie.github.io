@@ -1,265 +1,233 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>Untitled</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-        	<script src="assets/js/jquery.min.js"></script>
-  
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-  
-	</head>
-	<body>
 
-		<!-- Header -->
-   <header id="header">
+<head>
+    <title>LMM CARE</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
         <div class="container">
             <a href="index.html"><img id="logo1" src="images/logo.svg" class="logo hiddenlogo" style="width:15%; padding:10px "></a>
             <a id="hiddentxt" style="color:white" href="index.html" class="hiddentext"><span  style="weight:900;">LMM CARE</span> <span id="addtxt" style="weight:light;"> | The Childcare Experts</span></a>
             <nav id="nav" style="right:33%;">
                 <ul>
-                    
+
                     <li>
                         <a href="">Services</a>
                         <ul>
                             <li><a href="creche.html">Crèche</a></li>
-                    
+
                             <li><a href="hotel.html">Hotel</a></li>
                             <li><a href="weddings.html">Wedding</a></li>
                             <li><a href="corporate.html">Corporate</a></li>
-                           
+
                         </ul>
                     </li>
                     <li><a href="about.html">About Us</a></li>
-                       <li><a href="">Find a Job</a></li>
-                     <li><a href="">Resources</a></li>
-              
+                    <li><a href="registration.html">Find a Job</a></li>
+                    <li><a href="">Resources</a></li>
+
                 </ul>
             </nav>
-            <nav id="nav1"  style="right:0;margin-right:5%; ">
-            <ul><li ><a style="color:#FEAE3B;" href="contact.html" ><i class="fa fa-envelope"></i> </a></li>
-             <li ><a style="color:#FEAE3B; " id="myBtn2" ><i  class="fa fa-phone" style="
-    margin-left: -30px;" ></i> </a></li></ul>
-          
-            
-                    
+            <nav id="nav1" style="right:0;margin-right:5%; ">
+                <ul>
+                    <li><a style="color:#FEAE3B;" href="contact.html"><i class="fa fa-envelope"></i> </a></li>
+                    <li><a style="color:#FEAE3B; " id="myBtn2"><i  class="fa fa-phone" style="
+    margin-left: -30px;" ></i> </a></li>
+                </ul>
+
+
+
             </nav>
         </div>
     </header>
-        <style>
-            	#header {
-		background: #216A95;
+    <style>
+        #header {
+            background: #216A95;
+        }
+        
+        #header nav>ul>li>a {
+            color: white;
+            display: block;
+            font-family: 'Raleway';
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            line-height: 2.5em;
+            padding: 0 1em;
+            text-decoration: none;
+        }
+        
+        .dropotron {
+            background: #216A95;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.075);
+            list-style: none;
+            margin-top: -0.5em;
+            min-width: 15em;
+            padding: 0.5em 0;
+        }
+        
+        .dropotron>li {
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+            padding: 0;
+        }
+        
+        .dropotron>li>a {
+            color: white;
+            display: block;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            line-height: 2.75em;
+            padding: 0 1em;
+            text-decoration: none;
+        }
+        
+        .dropotron>li:hover>a,
+        .dropotron>li.active>a {
+            background-color: #FEAE3B;
+            color: #ffffff !important;
+        }
+        
+        .dropotron>li:first-child {
+            box-shadow: none !important;
+        }
+        
+        .dropotron.level-0 {
+            font-size: 0.8em;
+            margin-top: 3.5em;
+        }
+        
+        .dropotron.level-0:before {
+            border-bottom: solid 1em #FEAE3B;
+            border-left: solid 1em transparent;
+            border-right: solid 1em transparent;
+            content: '';
+            display: block;
+            height: 2em;
+            left: 50%;
+            margin-left: -1em;
+            position: absolute;
+            top: -2em;
+            width: 2em;
+        }
 
-	}
-
-            #header nav > ul > li > a {
-						color: white;
-						display: block;
-						font-family: 'Raleway';
-						font-weight: 700;
-						letter-spacing: 0.05em;
-						line-height: 2.5em;
-						padding: 0 1em;
-						text-decoration: none;
-						
-					}
-	.dropotron {
-	background: #216A95;
-		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.075);
-		
-		list-style: none;
-		margin-top: -0.5em;
-		min-width: 15em;
-		padding: 0.5em 0;
-	}
-
-		.dropotron > li {
-			box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
-			padding: 0;
-		}
-
-			.dropotron > li > a {
-			color:white;
-				display: block;
-			
-				font-weight: 400;
-				letter-spacing: 0.05em;
-				line-height: 2.75em;
-				padding: 0 1em;
-				text-decoration: none;
-				
-			}
-
-			.dropotron > li:hover > a, .dropotron > li.active > a {
-				background-color: #FEAE3B;
-				color: #ffffff !important;
-			}
-
-			.dropotron > li:first-child {
-				box-shadow: none !important;
-			}
-
-		.dropotron.level-0 {
-			font-size: 0.8em;
-			margin-top: 3.5em;
-		}
-
-			.dropotron.level-0:before {
-				border-bottom: solid 1em #FEAE3B;
-				border-left: solid 1em transparent;
-				border-right: solid 1em transparent;
-				content: '';
-				display: block;
-				height: 2em;
-				left: 50%;
-				margin-left: -1em;
-				position: absolute;
-				top: -2em;
-				width: 2em;
-			}
-        </style>
+    </style>
 
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
-     
-				<!-- Main-->
-               <div id="main" class="wrapper style3">
-						<div class="container 75%">
-                                <h2 style="font-size:40px">Our Mission</h2>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
 
-                            </header>
-<div  class="twp">
-                     <img src="images/pexels-photo-510784.jpeg" alt="" style="width:100%"/>
-                            <p style="line-height: 200%; font-size:22px;  font-weight: 400;">Last Minute Minders came to life in 2007 and was established by Hannah Wrixon who recognised a need for staffing support in the childcare industry.</p>
-                            <p>Hannah ran a successful crèche in Limerick for a number of years and knows the difficulties that face childcare providers around staffing, in particular maintaining ratios in the event of staff absences. As a parent of three Hannah also recognised the struggles that all working parents face around childcare. Last Minute Minders was initially born to address these needs.</p>
-                            <p>We have adapted and grown the business in line with our customer’s needs over the years and now offer a suite of services to support them.</p>
-                            <p>Last Minute Minders is a community of childcare professionals who are Garda vetted, qualified, reference checked and interviewed. Our rigorous pre-screening means that only the very best minders are accepted into our community.</p>
-                            <p>We with our Minders have the knowledge and experience to offer solutions that work for you.</p>
+        <!-- Main-->
+        <div id="main" class="wrapper style3">
+            <div class="container 75%">
+                <h2 style="font-size:40px">About Us</h2>
 
-                     
-                            <hr />
-                            <h2>What we do…</h2>
+                </header>
+                <div class="twp">
+                    <img src="images/pexels-photo-510784.jpeg" alt="" style="width:100%" />
+                    <p>
+                        <h3>What We Do</h3>We employ a community of amazing minders nationwide who provide childcare support to parents, creches, organisations, hotels and their guests.<br><br> Providing excellent childcare is our priority and to ensure our high standards are met, all of our minders are rigorously screened before they are available to work.<br><br> We are the only agency in Ireland who conducts extensive background checks on all of our minders including Garda Vetting, qualification checks, reference checks and interviews offering you the highest quality minders, eliminating any stress!
+                        <br><br>
+                        <h3>Supporting Creches</h3>
 
-                            <p style="line-height: 200%; font-size:22px;  font-weight: 400;">We are an introductory agency with a community of dedicated minders nationwide who provide childcare support.</p>
-                            <p>We introduce users of our service to these amazing minders for relief and emergency support.</p>
-                            <p>Each minder has an online profile where they can set their availability, preferred work locations and manage their work.</p>
-                            <p>Our community of Minders have gone through our rigorous screening process to become a member. This means that they are now available to support creches, hotels and parents.</p>
-                            <p>All of our minders are self employed contractors who work independently.</p>
-
-                            <hr />
-   <center> <h2>This is us</h2></center>
-                        <div class="row 50% uniform" style=" padding-top:40px;">
-
-
-                        <div class="4u 12u$(small)">
-                            <center>
-                                <div>
-                                  <img style="width:50%" class="img-circle" src="images/maureen.png">
-                                </div>
-                                <h2>Maureen</h2>
-                                <small>Placement Officer</small>
-                                   <p>I am our Placement Officer and, I have the lovely job of coordinating the placement of minders for all of our clients nationwide. I also liaise with Crèches and Parents to anticipate their needs and plan cover for them on a daily and weekly basis. I studied Business and computers at HSI, Limerick.</p>
-                            </center>
-                            
-                        </div>
-
-
-                        <div class="4u 12u$(small)">
-                            <center>
-                                <div>
-                                    <img style="width:50%" class="img-circle" src="images/hannah.jpg">
-                                </div>
-                                <h2>Hannah</h2>
-                                <p >Hannah ran a successful crèche in Limerick for a number of years and <b>knows the difficulties that face childcare providers</b> around staffing, in particular maintaining ratios in the event of staff absences.</p>
-                <p>As a parent of three Hannah also recognised the struggles that all working parents face around childcare. Last Minute Minders was initially born to address these needs. Responding to additional needs within the industry we developed and grew our business and are a valuable resource to businesses within the Early Childhood Industry and continue to support families with childcare needs within the home.</p>
-                            </center>
-                        </div>
-
-
-                        <div class="4u$ 12u$(small)">
-                            <center>
-                                <div>
-                                   <img style="width:50%" class="img-circle" src="images/steph.png">
-                                </div>
-                                <h2>Steph</h2>
-                           <p>I am the Recruitment Officer for Last Minute Minders and the first point of contact for Minders who wish to register with us or for clients who would like support in recruiting long term or permanent staff for their team. I interview and background check all of our minders. As a Mom myself I know how important it is that our minders are of the highest calibre. I studied HR at University of Limerick and have a background in recruiting in the commercial and healthcare industries, I am also currently studying Early Childhood at Mary Immaculate College.</p>
-                            </center>
-                        </div>
-
-
-
-                    </div>
-                            </div>
-                            
+                        With over 20 years’ experience in the Childcare industry we know that staffing is often an obstacle in providing quality childcare.
+                        <br><br> Here’s how we can help you!
+                        <br><br> We can provide your crèche with:</p>
+                    <ul>
+                        <li>
+                            Relief Cover
+                        </li>
+                        <li>
+                          Maternity Leave Cover
+                        </li>
+                        <li>
+                          Holiday Cover
+                        </li>
+                        <li>Summer Work for your Minders: if your Creche closes for the summer and your staff are seeking work during these months, we can help!</li>
+                    </ul>
+<p>When you book a Childcare professional through Last Minute Minders you will be given access to all the documentation that you require in order to be compliant including:</p>
+            <ul><li>Completed Garda Vetting</li><li>Qualifications</li><li>Two verified Childcare related references</li><li>Photo ID</li><li>CV</li></ul>
+            <p>Once you are registered with us, you can begin to request cover immediately.</p>
+<a href="registration.html" style="color:#868686" >Don’t Delay, Register Today! </a>
+                
                 </div>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+            </div>
+
+
+
+
+
+
+
+
+
+
         </div>
-				<!-- Footer -->
-	   <footer id="footer">
-            <div class="row" style="text-align:left; color:white; padding-left:20%; padding-right:20%;">
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="row footer-wrapper" style="text-align:left; color:white;">
                 <div class="4u 6u(small) 12u(xsmall)">
-                        <h4 style="padding-left:20px; color:#FEAE3B;">Services</h4>
-                                <ul  style=" padding-left:10px;
+                    <h4 style="padding-left:20px; color:#FEAE3B;">Services</h4>
+                    <ul style=" padding-left:10px;
     list-style-type: none;">
-                        <li  ><a style="text-decoration:none; color:white; outline:none" href="creche.html">Créche</a></li>
-                                    
-                        <li  ><a style="text-decoration:none; color:white; outline:none" href="hotel.html">Hotel</a></li>
-                                    
-                       <li  ><a style="text-decoration:none; color:white; outline:none" href="weddings.html">Wedding</a></li>
-                                    
-                       <li  ><a style="text-decoration:none; color:white; outline:none" href="corporate.html">Corporate</a></li>
-                                    
-                   
+                        <li><a style="text-decoration:none; color:white; outline:none" href="creche.html">Créche</a></li>
+
+                        <li><a style="text-decoration:none; color:white; outline:none" href="hotel.html">Hotel</a></li>
+
+                        <li><a style="text-decoration:none; color:white; outline:none" href="weddings.html">Wedding</a></li>
+
+                        <li><a style="text-decoration:none; color:white; outline:none" href="corporate.html">Corporate</a></li>
+
+
                     </ul>
                 </div>
-                  <div class="4u 6u(small) 12u(xsmall)">
-                      <h4 style="padding-left:20px; color:#FEAE3B;">Our Company</h4>
-                                <ul  style=" padding-left:10px;
+                <div class="4u 6u(small) 12u(xsmall)">
+                    <h4 style="padding-left:20px; color:#FEAE3B;">Our Company</h4>
+                    <ul style=" padding-left:10px;
     list-style-type: none;">
-                        <li  ><a style="text-decoration:none; color:white; outline:none" href="">Contact Us</a></li>
-                                       <li  ><a style="text-decoration:none; color:white; outline:none" href="about.html">About Us</a></li>
-                   
+                        <li><a style="text-decoration:none; color:white; outline:none" href="">Contact Us</a></li>
+                        <li><a style="text-decoration:none; color:white; outline:none" href="about.html">About Us</a></li>
+
                     </ul>
                 </div>
-                    <div class="4u 6u(small) 12u(xsmall)" >
-                        <h4 style="padding-left:20px; color:#FEAE3B;">Contact</h4>
-                                <ul class="contact-icons"  style=" padding-left:10px;
+                <div class="4u 6u(small) 12u(xsmall)">
+                    <h4 style="padding-left:20px; color:#FEAE3B;">Contact</h4>
+                    <ul class="contact-icons" style=" padding-left:10px;
     list-style-type: none;">
                         <li class="icon fa-home" style=" "> LMM Care, Unit b12, LEDP, Roxboro, Limerick.
-</li>
-                        <li class="icon fa-phone"> 083 1704464</a></li>
-                        <li class="icon fa-envelope-o">   info@lmmcare.com</li>
+                        </li>
+                        <li class="icon fa-phone"> 083 1704464</a>
+                        </li>
+                        <li class="icon fa-envelope-o"> info@lmmcare.com</li>
                     </ul>
                 </div>
             </div>
-   <hr>
-<a href="" style="color:#FEAE3B;">Terms & Conditions</a>
+            <hr>
+            <a href="" style="color:#FEAE3B;">Terms & Conditions</a>
             <p style="color:white" class="copyright">&copy; LMM CARE. All rights reserved.</p>
         </footer>
-			</div>
+    </div>
 
-		<!-- Scripts -->
-			
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+    <!-- Scripts -->
 
-	</body>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>

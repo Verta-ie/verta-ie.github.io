@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>LMM CARE</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body>
+    <style>
+        #header {
+            background: #216A95;
+        }
+        
+        #header nav>ul>li>a {
+            color: white;
+            display: block;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            line-height: 2.5em;
+            padding: 0 1em;
+            text-decoration: none;
+        }
+        
+        .dropotron {
+            background: #216A95;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.075);
+            list-style: none;
+            margin-top: -0.5em;
+            min-width: 15em;
+            padding: 0.5em 0;
+        }
+        
+        .dropotron>li {
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+            padding: 0;
+        }
+        
+        .dropotron>li>a {
+            color: white;
+            display: block;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            line-height: 2.75em;
+            padding: 0 1em;
+            text-decoration: none;
+        }
+        
+        .dropotron>li:hover>a,
+        .dropotron>li.active>a {
+            background-color: #FEAE3B;
+            color: #ffffff !important;
+        }
+        
+        .dropotron>li:first-child {
+            box-shadow: none !important;
+        }
+        
+        .dropotron.level-0 {
+            font-size: 0.8em;
+            margin-top: 3.5em;
+        }
+        
+        .dropotron.level-0:before {
+            border-bottom: solid 1em #FEAE3B;
+            border-left: solid 1em transparent;
+            border-right: solid 1em transparent;
+            content: '';
+            display: block;
+            height: 2em;
+            left: 50%;
+            margin-left: -1em;
+            position: absolute;
+            top: -2em;
+            width: 2em;
+        }
+
+    </style>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html"><img id="logo1" src="images/logo.svg" class="logo hiddenlogo" style="width:15%; padding:10px "></a>
+            <a id="hiddentxt" style="color:white" href="index.html" class="hiddentext"><span  style="weight:900;">LMM CARE</span> <span id="addtxt" style="weight:light;"> | The Childcare Experts</span></a>
+            <nav id="nav" style="right:33%;">
+                <ul>
+
+                    <li>
+                        <a href="">Services</a>
+                        <ul>
+                            <li><a href="creche.html">Crèche</a></li>
+
+                            <li><a href="hotel.html">Hotel</a></li>
+                            <li><a href="weddings.html">Wedding</a></li>
+                            <li><a href="corporate.html">Corporate</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="registration.html">Find a Job</a></li>
+                    <li><a href="">Resources</a></li>
+
+                </ul>
+            </nav>
+            <nav id="nav1" style="right:0;margin-right:5%; ">
+                <ul>
+                    <li><a style="color:#FEAE3B;" href="contact.html"><i class="fa fa-envelope"></i> </a></li>
+                    <li><a style="color:#FEAE3B; " id="myBtn2"><i  class="fa fa-phone" style="
+    margin-left: -30px;" ></i> </a></li>
+                </ul>
+
+
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+
+        <!-- Main-->
+        <div id="main" class="wrapper style3">
+            <div class="container 100%">
+                <header class="major">
+                    <h2>Register</h2>
+                    <p>Fill in your details below and we will be in touch as soon as possible</p>
+                </header>
+
+                <!-- Content -->
+                <div style="background-color:#FEAE3B; padding:30px;">
+                    <center>
+                        <section id="content" style="width:80%">
+                            <form method="post" action="registration.php">
+                                <div class="row uniform 50%">
+                                    <div class="12u$">
+                                        <input type="hidden" id="subj" name="subj" value="Registration Form">
+                                        <input type="text" name="name" id="name" value="" placeholder="Name" />
+                                    </div>
+                                </div>
+                                <div class="row uniform 50%">
+                                    <div class="12u$">
+                                    
+                                        <input type="text" name="county" id="county" value="" placeholder="County" />
+                                    </div>
+                                </div>
+                                       <div class="row uniform 50%">
+                                    <div class="12u$">
+                                    
+                                        <input type="text" name="exp" id="exp" value="" placeholder="Years of childcare experience?" />
+                                    </div>
+                                </div>
+                                <h2 style="padding-top:20px;">Area of Interest</h2>
+                                 <div class="row unifrom 50%">
+                                    <div class="12/5u$">
+                                        <input type="checkbox" id="area1" name="area[]" value="Nanny">
+                                        <label for="area1">Nanny</label>
+                                    </div>
+                                    <div class="12/5u$">
+                                        <input type="checkbox" id="area2" name="area[]" value="Creche">
+                                        <label for="area2">Créche</label>
+                                    </div>
+                                           <div class="12/5u$">
+                                        <input type="checkbox" id="area3" name="area[]" value="Permanent Work">
+                                        <label for="area3">Permanent Work</label>
+                                    </div>
+                                </div>
+                                   <div class="row uniform 50%">
+                                    <div class="12u$">
+                                    
+                                        <input type="text" name="qual" id="qual" value="" placeholder="Qualification (Créche only)" />
+                                    </div>
+                                </div>
+                                <div class="row uniform 50%">
+                                    <div class="6u 12u$(xsmall)">
+
+                                        <input type="tel" name="phone" id="phone" value="" placeholder="Phone Number" />
+                                    </div>
+                                    <div class="6u$ 12u$(xsmall)">
+                                        <input type="email" name="email" id="email" value="" placeholder="Email" />
+                                    </div>
+                                </div>
+                            
+                              
+                                <h2 style="padding-top:20px;">How will we contact you?</h2>
+                                <div class="row unifrom 50%">
+                                    <div class="12/5u$">
+                                        <input type="checkbox" id="contact1" name="contact[]" value="Email">
+                                        <label for="contact1">Email</label>
+                                    </div>
+                                    <div class="12/5u$">
+                                        <input type="checkbox" id="contact2" name="contact[]" value="Phone">
+                                        <label for="contact2">Phone</label>
+                                    </div>
+                                </div>
+                                <div class="row uniform">
+                                    <div class="12u$">
+                                        <ul class="actions align-center">
+                                            <li><input type="submit" value="Send Message" class="bluebut" /></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+
+                </div>
+                </center>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="row  footer-wrapper" style="text-align:left; color:white;">
+                <div class="4u 6u(small) 12u(xsmall)">
+                    <h4 style="padding-left:20px; color:#FEAE3B;">Services</h4>
+                    <ul style=" padding-left:10px;
+    list-style-type: none;">
+                        <li><a style="text-decoration:none; color:white; outline:none" href="creche.html">Créche</a></li>
+
+                        <li><a style="text-decoration:none; color:white; outline:none" href="hotel.html">Hotel</a></li>
+
+                        <li><a style="text-decoration:none; color:white; outline:none" href="weddings.html">Wedding</a></li>
+
+                        <li><a style="text-decoration:none; color:white; outline:none" href="corporate.html">Corporate</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="4u 6u(small) 12u(xsmall)">
+                    <h4 style="padding-left:20px; color:#FEAE3B;">Our Company</h4>
+                    <ul style=" padding-left:10px;
+    list-style-type: none;">
+                        <li><a style="text-decoration:none; color:white; outline:none" href="">Contact Us</a></li>
+                        <li><a style="text-decoration:none; color:white; outline:none" href="about.html">About Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="4u 6u(small) 12u(xsmall)">
+                    <h4 style="padding-left:20px; color:#FEAE3B;">Contact</h4>
+                    <ul class="contact-icons" style=" padding-left:10px;
+    list-style-type: none;">
+                        <li class="icon fa-home" style=" "> LMM Care, Unit b12, LEDP, Roxboro, Limerick.
+                        </li>
+                        <li class="icon fa-phone"> 083 1704464</a>
+                        </li>
+                        <li class="icon fa-envelope-o"> info@lmmcare.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <a href="" style="color:#FEAE3B;">Terms & Conditions</a>
+            <p style="color:white" class="copyright">&copy; LMM CARE. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

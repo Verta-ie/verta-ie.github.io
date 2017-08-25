@@ -1,0 +1,52 @@
+.bundle {
+    width: 45%;
+    height: 80px;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 15px;
+    float: left;
+}
+
+@media screen and (max-width: 768px) {
+    .bundle {
+        width: 90%;
+    }
+}
+
+.bundlecont {
+   
+    max-width: 1170px;
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    margin: 4em auto;
+    display:block;
+overflow:hidden;
+}
+
+  .addbutton {
+      height: 80px;
+      width: 20%;
+    background-color: #42aaf4;
+       border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+        text-align: center;
+      
+  }
+ .addbutton a {
+  text-decoration: none;
+    color: #ffffff;
+     font-size: 6em;
+ -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+line-height:80px;
+  }
+ .addbutton a:hover
+{   text-decoration: none;
+color: white;}

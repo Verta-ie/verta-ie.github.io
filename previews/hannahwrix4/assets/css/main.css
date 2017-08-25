@@ -20,6 +20,7 @@ html{
    
 
 	}
+
 textarea {
     resize: none;
 }
@@ -31,6 +32,23 @@ textarea {
 	body {
 		line-height: 1;
 	}
+
+ @media screen and (max-width: 970px) {
+     .footer-wrapper{
+    padding-left:20%;
+    padding-right: 20%;
+   
+    
+}
+    }
+ @media screen and (min-width: 970px) {
+.footer-wrapper{
+    padding-left:30%;
+    padding-right: 30%;
+   
+    
+}
+}
 
 	ol, ul {
 		list-style: none;
@@ -3025,7 +3043,9 @@ input[type="tel"],
 
 	
 
-	
+	#logos{
+            width:60%
+        }
 
 /* XLarge */
 
@@ -3036,15 +3056,56 @@ input[type="tel"],
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
-
+#logos{
+            width:60%
+        }
 	}
 
 /* Large */
 
+.circle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+    width: 86px;
+    height: 86px;
+    padding: 12px;
+
+ box-shadow: rgba(0,0,0,0.2) 0 0 30px;
+    background: #FEAE3B;
+  
+    color: #ffffff;
+    text-align: center;
+    
+    font: 52px Arial, sans-serif;
+}
+.circle{
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+    width: 86px;
+    height: 86px;
+    padding: 12px;
+
+ box-shadow: rgba(0,0,0,0.2) 0 0 30px;
+    background: #FEAE3B;
+  
+    color: #ffffff;
+    text-align: center;
+     
+    text-decoration-line: none;
+    outline: none;
+    font: 52px Arial, sans-serif;
+}
+
+
+
 	@media screen and (max-width: 1280px) {
 
 		/* Basic */
-
+#logos{
+            width:60%
+        }
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
