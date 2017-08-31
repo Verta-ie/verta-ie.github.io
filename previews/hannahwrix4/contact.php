@@ -322,13 +322,13 @@ $headers = 'From: '.$email."\r\n".
 					</div>
 
 				<!-- Footer -->
-	    <footer id="footer">
-            <div class="row" style="text-align:left; color:white; padding-left:20%; padding-right:20%;">
+	      <footer id="footer">
+            <div class="row footer-wrapper" style="text-align:left; color:white;">
                 <div class="4u 6u(small) 12u(xsmall)">
-                        <h4 style="padding-left:20px; color:#FEAE3B;">Services</h4>
-                                <ul  style=" padding-left:10px;
+                        <h4 style=" color:#FEAE3B;">Services</h4>
+                                <ul  style="  padding: 0;
     list-style-type: none;">
-                        <li  ><a style="text-decoration:none; color:white; outline:none" href="creche.html">Créche</a></li>
+                        <li  ><a style="text-decoration:none; color:white; outline:none; " href="creche.html">Créche</a></li>
                                     
                         <li  ><a style="text-decoration:none; color:white; outline:none" href="hotel.html">Hotel</a></li>
                                     
@@ -340,21 +340,21 @@ $headers = 'From: '.$email."\r\n".
                     </ul>
                 </div>
                   <div class="4u 6u(small) 12u(xsmall)">
-                      <h4 style="padding-left:20px; color:#FEAE3B;">Our Company</h4>
-                                <ul  style=" padding-left:10px;
+                      <h4 style=" color:#FEAE3B;">Our Company</h4>
+                                <ul  style="  padding: 0;
     list-style-type: none;">
-                        <li  ><a style="text-decoration:none; color:white; outline:none" href="">Contact Us</a></li>
+                        <li  ><a style="text-decoration:none; color:white; outline:none" href="contact.html">Contact Us</a></li>
                                        <li  ><a style="text-decoration:none; color:white; outline:none" href="about.html">About Us</a></li>
                    
                     </ul>
                 </div>
                     <div class="4u 6u(small) 12u(xsmall)" >
-                        <h4 style="padding-left:20px; color:#FEAE3B;">Contact</h4>
-                                <ul class="contact-icons"  style=" padding-left:10px;
+                        <h4 style=" color:#FEAE3B;">Contact</h4>
+                                <ul class="contact-icons"  style=" padding: 0;
     list-style-type: none;">
                         <li class="icon fa-home" style=" "> LMM Care, Unit b12, LEDP, Roxboro, Limerick.
 </li>
-                        <li class="icon fa-phone"> 083 1704464</a></li>
+                        <li class="icon fa-phone"> 083 1704464 or 015241069</a></li>
                         <li class="icon fa-envelope-o">   info@lmmcare.com</li>
                     </ul>
                 </div>

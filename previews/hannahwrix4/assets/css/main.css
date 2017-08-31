@@ -3063,22 +3063,7 @@ input[type="tel"],
 
 /* Large */
 
-.circle {
-    border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
 
-    width: 86px;
-    height: 86px;
-    padding: 12px;
-
- box-shadow: rgba(0,0,0,0.2) 0 0 30px;
-    background: #FEAE3B;
-  
-    color: #ffffff;
-    text-align: center;
-    
-    font: 52px Arial, sans-serif;
-}
 .circle{
     border-radius: 50%;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
@@ -3098,6 +3083,19 @@ input[type="tel"],
     font: 52px Arial, sans-serif;
 }
 
+
+@media screen and (max-width: 975px) {
+    .whatwe{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media screen and (min-width: 975px) {
+    .whatwe{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
 
 
 	@media screen and (max-width: 1280px) {
