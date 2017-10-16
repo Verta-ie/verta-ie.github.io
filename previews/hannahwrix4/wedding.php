@@ -110,6 +110,16 @@ $headers = 'From: '.$email."\r\n".
 
 <html>
 	<head>
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107710688-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107710688-1');
+</script>
+
 		<title>LMM CARE</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -143,8 +153,8 @@ $headers = 'From: '.$email."\r\n".
                         </ul>
                     </li>
                     <li><a href="about.html">About Us</a></li>
-                       <li><a href="">Find a Job</a></li>
-                     <li><a href="">Resources</a></li>
+                       <li><a href="registration.html">Find a Job</a></li>
+                     <li><a href="resources.html">Resources</a></li>
               
                 </ul>
             </nav>
@@ -333,8 +343,8 @@ $headers = 'From: '.$email."\r\n".
                 
 					</div>
 
-				<!-- Footer -->
-	     <footer id="footer">
+		  <!-- Footer -->
+          <footer id="footer">
             <div class="row footer-wrapper" style="text-align:left; color:white;">
                 <div class="4u 6u(small) 12u(xsmall)">
                         <h4 style=" color:#FEAE3B;">Services</h4>
@@ -366,7 +376,7 @@ $headers = 'From: '.$email."\r\n".
     list-style-type: none;">
                         <li class="icon fa-home" style=" "> LMM Care, Unit b12, LEDP, Roxboro, Limerick.
 </li>
-                        <li class="icon fa-phone"> 083 1704464 or 015241069</a></li>
+                        <li class="icon fa-phone"> 083 1704464 or 015241066</a></li>
                         <li class="icon fa-envelope-o">   info@lmmcare.com</li>
                     </ul>
                 </div>
@@ -375,8 +385,7 @@ $headers = 'From: '.$email."\r\n".
 <a href="" style="color:#FEAE3B;">Terms & Conditions</a>
             <p style="color:white" class="copyright">&copy; LMM CARE. All rights reserved.</p>
         </footer>
-
-			</div>
+    </div>
 <script>
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -410,7 +419,7 @@ modal.onclick = function() {
   <div class="modal-content1">
     <span id="close1" class="close1">&times;</span>
       <center>
-      <h2 style="display:inline-block;">Call Us: <a style="text-decoration:underline;  " href="tel:+353831704464">+353831704464</a> </h2>
+      <h2 style="display:inline-block;">Call Us: <a style="text-decoration:underline;  " href="tel:+353831704464">+353831704464</a> or 01 5241066 </h2>
    </center>
   </div>
 

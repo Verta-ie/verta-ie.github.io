@@ -1,0 +1,17 @@
+///
+/// Solid State by Verta
+/// Verta.com | hello@Verta.com
+/// License: Verta.com/license
+///
+
+/* Icon */
+
+	.icon {
+		@include icon;
+		border-bottom: none;
+		position: relative;
+
+		> .label {
+			display: none;
+		}
+	}

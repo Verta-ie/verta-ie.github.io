@@ -1,0 +1,115 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body onload=pop()>
+        <style>
+            
+        .yellowbut {
+    box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.1);
+    background-color: #FEAE3B;
+    color: #ffffff !important;
+    border-radius: 3.92857em;
+    border: 0;
+    cursor: pointer !important;
+    display: inline-block;
+    font-weight: 600;
+    height: 3.92857em;
+    line-height: 3.92857em;
+    padding: 0 3em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    letter-spacing: 0.1em;
+    
+    font-size: 0.8em;
+}
+.yellowbut:hover{
+        background-color:#2378aa  ;
+}
+	.yellowbut.icon-after:before {
+				margin: 0 0 0 0.75em;
+				float: right;
+			}
+/* The Modal (background) */
+.modal3 {
+        color: #7f7f7f;
+    font-family: 'Raleway', sans-serif;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content3 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close3 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+    <div id="myModal3" class="modal3">
+
+  <!-- Modal content -->
+  <div class="modal-content3">
+    <span id="close3" class="close3">&times;</span>
+      <center>
+          <img src="images/logoblue.svg"/>
+      <h2 style="display:block;">We just got a new website!</h2>
+          <p>We are super excited to announce that lastminuteminders.com is now lmmcare.com <br> Please use our new website from now on!</p>
+          <a style="font-size:15px;" class="yellowbut" href="http://www.lmmcare.com">Take me there!</a>
+   </center>
+  </div>
+
+</div>
+<script>
+// Get the modal
+var modal1 = document.getElementById('myModal3');
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtn3");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementById("close3");
+
+// When the user clicks the button, open the modal 
+window.onload = function  {
+    modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+modal1.onclick = function() {
+   
+        modal1.style.display = "none";
+   
+}
+</script>
+</body>

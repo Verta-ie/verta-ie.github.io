@@ -1,0 +1,17 @@
+///
+/// Ethereal by Verta
+/// Verta.com | hello@Verta.com
+/// License: Verta.com/license
+///
+
+/* Icon */
+
+	.icon {
+		@include icon;
+		position: relative;
+		border-bottom: none;
+
+		> .label {
+			display: none;
+		}
+	}

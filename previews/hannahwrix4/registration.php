@@ -112,6 +112,16 @@ $headers = 'From: '.$email."\r\n".
 
 <html>
 	<head>
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107710688-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107710688-1');
+</script>
+
 		<title>LMM CARE</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -145,19 +155,21 @@ $headers = 'From: '.$email."\r\n".
                         </ul>
                     </li>
                     <li><a href="about.html">About Us</a></li>
-                       <li><a href="">Find a Job</a></li>
-                     <li><a href="">Resources</a></li>
+                       <li><a href="registration.html">Find a Job</a></li>
+                     <li><a href="resources.html">Resources</a></li>
               
                 </ul>
             </nav>
-            <nav id="nav1"  style="right:0;margin-right:5%; ">
-            <ul><li ><a style="color:#FEAE3B;" href="contact.html" ><i class="fa fa-envelope"></i> </a></li>
+    <nav id="nav1"  style="right:0;margin-right:5%; ">
+            <ul><li ><a style="color:#FEAE3B; margin-right:-10px;" href="index.html" ><i class="fa fa-home"></i> </a></li>
+                <li ><a style="color:#FEAE3B;  padding-left:0;" href="contact.html" ><i class="fa fa-envelope"></i> </a></li>
              <li ><a style="color:#FEAE3B; " id="myBtn2" ><i  class="fa fa-phone" style="
     margin-left: -30px;" ></i> </a></li></ul>
           
             
                     
             </nav>
+
         </div>
     </header>
         <style>
@@ -233,7 +245,89 @@ $headers = 'From: '.$email."\r\n".
 			}
         </style>
 
+ <style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+    
+    
+    <style>
+/* The Modal (background) */
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content1 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    min-width: 200px;;
+}
+
+/* The Close Button */
+.close1 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
      
@@ -251,8 +345,8 @@ $headers = 'From: '.$email."\r\n".
                 
 					</div>
 
-				<!-- Footer -->
-	     <footer id="footer">
+  <!-- Footer -->
+          <footer id="footer">
             <div class="row footer-wrapper" style="text-align:left; color:white;">
                 <div class="4u 6u(small) 12u(xsmall)">
                         <h4 style=" color:#FEAE3B;">Services</h4>
@@ -284,7 +378,7 @@ $headers = 'From: '.$email."\r\n".
     list-style-type: none;">
                         <li class="icon fa-home" style=" "> LMM Care, Unit b12, LEDP, Roxboro, Limerick.
 </li>
-                        <li class="icon fa-phone"> 083 1704464 or 015241069</a></li>
+                        <li class="icon fa-phone"> 083 1704464 or 015241066</a></li>
                         <li class="icon fa-envelope-o">   info@lmmcare.com</li>
                     </ul>
                 </div>
@@ -293,9 +387,72 @@ $headers = 'From: '.$email."\r\n".
 <a href="" style="color:#FEAE3B;">Terms & Conditions</a>
             <p style="color:white" class="copyright">&copy; LMM CARE. All rights reserved.</p>
         </footer>
+    </div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
 
-			</div>
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
+// Get the <span> element that closes the modal
+var span = document.getElementById("close");
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+modal.onclick = function() {
+ 
+        modal.style.display = "none";
+  
+}
+</script>
+<div id="myModal2" class="modal1">
+
+  <!-- Modal content -->
+  <div class="modal-content1">
+    <span id="close1" class="close1">&times;</span>
+      <center>
+      <h2 style="display:inline-block;">Call Us: <a style="text-decoration:underline;  " href="tel:+353831704464">+353831704464</a> or 01 5241066 </h2>
+   </center>
+  </div>
+
+</div>
+<script>
+// Get the modal
+var modal1 = document.getElementById('myModal2');
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementById("close1");
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+modal1.onclick = function() {
+   
+        modal1.style.display = "none";
+   
+}
+</script>
 		<!-- Scripts -->
 			
 			<script src="assets/js/skel.min.js"></script>
